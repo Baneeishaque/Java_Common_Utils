@@ -1,4 +1,4 @@
-package oel.json_utils;
+package ndk.utils_j2se;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class JSON_Sort_Test {
+public class JSON_Utils_Test {
 
     @Test
     public void test_sort_JSON_array_by_integer_field() {

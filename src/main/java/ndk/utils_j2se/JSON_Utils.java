@@ -1,4 +1,4 @@
-package oel.json_utils;
+package ndk.utils_j2se;
 
 import org.json.JSONArray;
 import org.json.JSONException;
