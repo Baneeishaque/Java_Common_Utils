@@ -102,8 +102,8 @@ repositories {
 
 dependencies {
 
-    implementation("org.json:json:20180813")
-    testCompile("junit", "junit", "4.12")
+    implementation("org.json:json:20190722")
+    testCompile("junit", "junit", "4.13")
 }
 
 configure<JavaPluginConvention> {
