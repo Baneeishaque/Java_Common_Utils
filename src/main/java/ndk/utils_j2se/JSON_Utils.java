@@ -18,11 +18,14 @@ public class JSON_Utils {
         JSON_array_list.sort((first_JSON_object, second_JSON_object) -> {
 
             int compare = 0;
+
             try {
                 Date keyA = desired_date_format.parse(first_JSON_object.getString(key_field));
                 Date keyB = desired_date_format.parse(second_JSON_object.getString(key_field));
                 compare = keyA.compareTo(keyB);
+
             } catch (JSONException | ParseException e) {
+
                 e.printStackTrace();
             }
             return compare;
@@ -42,16 +45,21 @@ public class JSON_Utils {
     }
 
     private static List<JSONObject> JSON_array_to_JSON_object_list(String JSON_array) {
+
         JSONArray array_JSON = new JSONArray(JSON_array);
         List<JSONObject> JSON_object_list = new ArrayList<>();
+
         for (int i = 0; i < array_JSON.length(); i++)
             JSON_object_list.add(array_JSON.getJSONObject(i));
+
         return JSON_object_list;
     }
 
     private static JSONArray JSON_object_list_to_JSON_array(List<JSONObject> JSON_object_list) {
+
         JSONArray JSON_array = new JSONArray();
         for (JSONObject json_object : JSON_object_list) {
+
             JSON_array.put(json_object);
         }
         return JSON_array;
@@ -63,6 +71,7 @@ public class JSON_Utils {
 
             JSONObject innerObj = JSON_array.getJSONObject(i);
             for (Iterator it = innerObj.keys(); it.hasNext(); ) {
+
                 String key = (String) it.next();
                 System.out.println(key + ":" + innerObj.get(key));
             }
@@ -71,13 +80,18 @@ public class JSON_Utils {
     }
 
     private static List<JSONObject> sort_JSON_array_by_integer_field(List<JSONObject> JSON_array_list, String key_field) {
+
         JSON_array_list.sort((first_json_object, second_json_object) -> {
+
             int compare = 0;
+
             try {
                 int first_json_object_key_value = first_json_object.getInt(key_field);
                 int second_json_object_key_value = second_json_object.getInt(key_field);
                 compare = Integer.compare(first_json_object_key_value, second_json_object_key_value);
+
             } catch (JSONException e) {
+
                 e.printStackTrace();
             }
             return compare;
