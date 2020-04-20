@@ -69,7 +69,8 @@ publishing {
 
         maven {
 
-            val releasesRepoUrl = uri("https://oss.sonatype.org/service/local/staging/deploy/maven2")
+            val releasesRepoUrl =
+                uri("https://oss.sonatype.org/service/local/staging/deploy/maven2")
             val snapshotsRepoUrl = uri("https://oss.sonatype.org/content/repositories/snapshots")
             url = if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
 
@@ -103,6 +104,8 @@ repositories {
 dependencies {
 
     implementation("org.json:json:20190722")
+    implementation("com.squareup.okhttp3:okhttp:4.5.0")
+
     testCompile("junit", "junit", "4.13")
 }
 
