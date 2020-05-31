@@ -13,6 +13,4 @@ public class TextLocalUtilsWrapper {
 
         return TextLocalUtils.sendSMS(API_KEY, "", "");
     }
-
-
 }
