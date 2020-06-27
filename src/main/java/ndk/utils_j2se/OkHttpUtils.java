@@ -9,6 +9,7 @@ import okhttp3.Response;
 
 public class OkHttpUtils {
 
+    //Not Compatible with android
     // one instance, reuse
     private static final OkHttpClient httpClient = new OkHttpClient();
 

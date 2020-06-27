@@ -7,6 +7,7 @@ import java.net.URLEncoder;
 
 public class TextLocalUtils {
 
+    //Not Compatible with android
     public static boolean sendSMS(String API_KEY, String mobileNumber, String message) {
 
         try {

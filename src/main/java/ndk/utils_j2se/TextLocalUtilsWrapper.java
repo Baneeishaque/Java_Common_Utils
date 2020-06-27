@@ -2,6 +2,7 @@ package ndk.utils_j2se;
 
 public class TextLocalUtilsWrapper {
 
+    //Not Compatible with android
     private static String API_KEY;
 
     public TextLocalUtilsWrapper(String API_KEY) {
