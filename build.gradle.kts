@@ -103,10 +103,10 @@ repositories {
 
 dependencies {
 
-    implementation("org.json:json:20190722")
-    implementation("com.squareup.okhttp3:okhttp:4.5.0")
+    implementation("org.json:json:20201115")
+    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.2")
 
-    testCompile("junit", "junit", "4.13")
+    testCompile("junit", "junit", "4.13.2")
 }
 
 configure<JavaPluginConvention> {
