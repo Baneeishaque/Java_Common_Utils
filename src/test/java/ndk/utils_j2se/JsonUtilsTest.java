@@ -1,11 +1,5 @@
 package ndk.utils_j2se;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-import org.junit.Test;
-
-import static org.junit.Assert.assertSame;
-
 public class JsonUtilsTest {
 
     //TODO : Fix bug

@@ -36,7 +36,7 @@ public class JSON_Utils {
 
     public static JSONArray sort_JSON_array_by_date_field(String JSON_array, String desired_date_format, String key_field) {
 
-        return sort_JSON_array_by_date_field(JSON_array,new SimpleDateFormat(desired_date_format),key_field);
+        return sort_JSON_array_by_date_field(JSON_array, new SimpleDateFormat(desired_date_format), key_field);
     }
 
     private static JSONArray sort_JSON_array_by_date_field(String JSON_array, SimpleDateFormat desired_date_format, String key_field) {
