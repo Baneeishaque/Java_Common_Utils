@@ -106,7 +106,7 @@ dependencies {
     implementation("org.json:json:20210307")
     implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.2")
 
-    testCompile("junit", "junit", "4.13.2")
+    testImplementation("junit", "junit", "4.13.2")
 }
 
 configure<JavaPluginConvention> {
