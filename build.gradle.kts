@@ -98,7 +98,7 @@ tasks.javadoc {
 
 repositories {
 
-    mavenCentral()
+//    mavenCentral()
 }
 
 dependencies {
